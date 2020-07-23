@@ -3,34 +3,39 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Webdesign</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style_mobile.min.css">
+		
 	</head>
 
 	<body>
-		<header>
-			<div class="main_header">
+		<div class="btn">
+			<a onclick="return false" href="#top" class="btn_top"></a>
+		</div>
+
+		<header id="top">
+			<div class="main_header wrapper">
 				<div class="logo"><img src="img/LOGO.png" alt="logo"></div>
-				<input type="checkbox" id="menu-checkbox">
-				<nav>
-					<label for="menu-checkbox" data-close="CLOSE" onclick data-open="MENU"
-					class="toggle-button"></label>
+				<a onclick="return false" href="#" class="btn_nav" id="btn_nav"><span></span></a>
+				<div class="block_nav" id="block_nav">
+				<nav class="nav">
 					<ul class="main_menu">
-						<li><a href="#home">HOME</a></li>
-						<li><a href="#portfol">PORTFOLIO</a></li>
-						<li><a href="#blog">BLOG</a></li>
-						<li><a href="#abus">ABOUT US</a></li>
-						<li><a href="#contact">CONTACT</a></li>
+						<li><a onclick="return false" href="#home" class="menu_btn">HOME</a></li>
+						<li><a onclick="return false" href="#portfol" class="menu_btn">PORTFOLIO</a></li>
+						<li><a onclick="return false" href="#blog" class="menu_btn">BLOG</a></li>
+						<li><a onclick="return false" href="#abus" class="menu_btn">ABOUT US</a></li>
+						<li><a onclick="return false" href="#contact" class="menu_btn">CONTACT</a></li>
 					</ul>
 				</nav>
+				</div>
 			</div>
 		</header>
 
 		<main>
 			<section class="main_slaider" id="home">
-				<div class="slaider_wrapper">
+				<div class="slaider_wrapper wrapper">
 					<div><h1>WE BELIEVE</h1></div>
 					<div><h1>IN QUALITY DESIGN</h1></div>
 					<div><p>Any creative project is unique</p></div>
@@ -40,7 +45,8 @@
 			</section>
 
 			<section class="main_content" id="portfol"> 
-				<div class="content_wrapper">
+				<div class="content_wrapper wrapper">
+				<div class="content">
 					<h1>WE CREATE QUALITY DESIGNS.</h1>
 					<p>We specialize in Web Design / Development and Graphic Design</p>
 					<div class="content_cards">
@@ -87,11 +93,12 @@
 							</div>
 						</div>
 					</div>
+					</div>
 				</div>
 			</section>
 
 			<section class="main_portfolio" id="blog">
-				<div class="wrapper_port">
+				<div class="wrapper_port wrapper">
 					<h2>OUR WORK</h2>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
 					<h3>SHOW ALL / WEB DEVELOPMENT / WEB DESIGN / GRAPHIC DESIGN</h3>
@@ -117,25 +124,30 @@
 			</section>
 
 			<section class="main_clients">
-				<div class="wrapper_clients">
+				<div class="wrapper_clients wrapper">
 					<h2>OUR CLIENTS</h2>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 						 sed diam nonummy nibh euismod tincidunt.</p>
-					<div class="owl-carousel">
-						<div class="carousel"><img src="img/our_clients/Client-1.jpg" alt="client"></div>
-						<div class="carousel"><img src="img/our_clients/Client-2.jpg" alt="client"></div>
-						<div class="carousel"><img src="img/our_clients/Client-3.jpg" alt="client"></div>
-						<div class="carousel"><img src="img/our_clients/Client-4.jpg" alt="client"></div>
-						<div class="carousel"><img src="img/our_clients/Client-5.jpg" alt="client"></div>
-						<div class="carousel"><img src="img/our_clients/Client-6.jpg" alt="client"></div>
-						<div class="carousel"><img src="img/our_clients/Client-7.jpg" alt="client"></div>
-						<div class="carousel"><img src="img/our_clients/Client-8.jpg" alt="client"></div>		
+					<div class="carousel">
+						<div class="span"></div>
+					<div class="siema">
+						<div><img src="img/our_clients/Client-1.jpg" alt="client"></div>
+						<div><img src="img/our_clients/Client-2.jpg" alt="client"></div>
+						<div><img src="img/our_clients/Client-3.jpg" alt="client"></div>
+						<div><img src="img/our_clients/Client-4.jpg" alt="client"></div>
+						<div><img src="img/our_clients/Client-5.jpg" alt="client"></div>
+						<div><img src="img/our_clients/Client-6.jpg" alt="client"></div>
+						<div><img src="img/our_clients/Client-7.jpg" alt="client"></div>
+						<div><img src="img/our_clients/Client-8.jpg" alt="client"></div>		
 					</div>
+					<button class="prev"><span></span></button>
+					<button class="next"><span></span></button>
+				</div>
 				</div>
 			</section>
 
 			<section class="main_about">
-				<div class="wrapper_about">
+				<div class="wrapper_about wrapper">
 					<div class="block_left">
 						<div class="about_us" id="abus">
 							<h3>About Us</h3>
@@ -144,7 +156,7 @@
 									laoreet dolore magna aliquam erat volutpat. Ut wisi 
 									enim ad minim veniam, quis nostrud exerci tation ullamcorper 
 									suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-							<div class="learn_btn"><a href="">Learn more</a></div>
+							<div class="learn_btn"><a onclick="return false" href="">Learn more</a></div>
 						</div>
 						<div class="ph_str">
 							<h3>Photo Stream</h3>
@@ -175,23 +187,23 @@
 						<div class="soc">
 							<h3>Social Connecting</h3>
 							<div class="soc_icon">
-								<a href="#"><img src="img/sc_icon/facebook.png" alt=""></a>
-								<a href="#"><img src="img/sc_icon/google-plus.png" alt=""></a>
-								<a href="#"><img src="img/sc_icon/twitter.png" alt=""></a>
-								<a href="#"><img src="img/sc_icon/linkedin.png" alt=""></a>
-								<a href="#"><img src="img/sc_icon/youtube.png" alt=""></a>
-								<a href="#"><img src="img/sc_icon/bloger.png" alt=""></a>
-								<a href="#"><img src="img/sc_icon/rss.png" alt=""></a>
+								<a onclick="return false" href="#"><img src="img/sc_icon/facebook.png" alt=""></a>
+								<a onclick="return false" href="#"><img src="img/sc_icon/google-plus.png" alt=""></a>
+								<a onclick="return false" href="#"><img src="img/sc_icon/twitter.png" alt=""></a>
+								<a onclick="return false" href="#"><img src="img/sc_icon/linkedin.png" alt=""></a>
+								<a onclick="return false" href="#"><img src="img/sc_icon/youtube.png" alt=""></a>
+								<a onclick="return false" href="#"><img src="img/sc_icon/bloger.png" alt=""></a>
+								<a onclick="return false" href="#"><img src="img/sc_icon/rss.png" alt=""></a>
 							</div>
 						</div>
 					</div>
 					<div class="block_right">
 						<div class="contact_info" id="contact">
 							<h3>Contact info</h3>
-							<p id="adr">Address: 12569 Saint Patrick des Prés, 
+							<p id="adr">Address: 12569 Saint Patrick des Prés,<br> 
 								85000 Paris, France</p>
 							<p id="phn">Phone: +38 045 845-45-78<br> +38 045 845-45-79</p>
-							<p id="mail">E-mail:<span> freeforwebdesign@gmail.com</span></p>
+							<p id="mail">E - mail:<span> freeforwebdesign@gmail.com</span></p>
 						</div>
 						<div class="follow">
 							<h3>Follow Us</h3>
@@ -208,12 +220,12 @@
 		</main>
 
 		<footer>
-			<div class="wrapper_footer">
-				<div><h2><a href="#home">HOME</a></h2></div>
-				<div><h2><a href="#portfol">PORTFOLIO</a></h2></div>
-				<div><h2><a href="#blog">BLOG</a></h2></div>
-				<div><h2><a href="#abus">ABOUT US</a></h2></div>
-				<div><h2><a href="#contact">CONTACT</a></h2></div>
+			<div class="wrapper_footer wrapper">
+				<div><h2><a onclick="return false" href="#home">HOME</a></h2></div>
+				<div><h2><a onclick="return false" href="#portfol">PORTFOLIO</a></h2></div>
+				<div><h2><a onclick="return false" href="#blog">BLOG</a></h2></div>
+				<div><h2><a onclick="return false" href="#abus">ABOUT US</a></h2></div>
+				<div><h2><a onclick="return false" href="#contact">CONTACT</a></h2></div>
 			</div>
 		</footer>
 
@@ -221,7 +233,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/siema.min.js"></script>
+  <script src="js/script.js"></script>
 	</body>
 </html>
